@@ -20,8 +20,8 @@
 				<texture background="true">$INFO[Container(200).ListItem.Property(Fanart)]</texture>
 				<visible>Control.HasFocus(200)</visible>
 				<fadetime>600</fadetime>
-				<animation effect="fade" time="450">Visible</animation>
-				<animation effect="fade" time="450">Hidden</animation>
+				<animation effect="fade" time="0">Visible</animation>
+				<animation effect="fade" time="0">Hidden</animation>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -32,8 +32,8 @@
 				<texture background="true">$INFO[Container(201).ListItem.Property(Fanart)]</texture>
 				<visible>Control.HasFocus(201)</visible>
 				<fadetime>600</fadetime>
-				<animation effect="fade" time="450">Visible</animation>
-				<animation effect="fade" time="450">Hidden</animation>
+				<animation effect="fade" time="0">Visible</animation>
+				<animation effect="fade" time="0">Hidden</animation>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -44,8 +44,8 @@
 				<texture background="true">$INFO[Container(202).ListItem.Property(Fanart)]</texture>
 				<visible>Control.HasFocus(202)</visible>
 				<fadetime>600</fadetime>
-				<animation effect="fade" time="450">Visible</animation>
-				<animation effect="fade" time="450">Hidden</animation>
+				<animation effect="fade" time="0">Visible</animation>
+				<animation effect="fade" time="0">Hidden</animation>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -56,8 +56,8 @@
 				<texture background="true">$INFO[Container(203).ListItem.Property(Fanart)]</texture>
 				<visible>Control.HasFocus(203)</visible>
 				<fadetime>600</fadetime>
-				<animation effect="fade" time="450">Visible</animation>
-				<animation effect="fade" time="450">Hidden</animation>
+				<animation effect="fade" time="0">Visible</animation>
+				<animation effect="fade" time="0">Hidden</animation>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -68,8 +68,8 @@
 				<texture background="true">$INFO[Container(204).ListItem.Property(Fanart)]</texture>
 				<visible>Control.HasFocus(204)</visible>
 				<fadetime>600</fadetime>
-				<animation effect="fade" time="450">Visible</animation>
-				<animation effect="fade" time="450">Hidden</animation>
+				<animation effect="fade" time="0">Visible</animation>
+				<animation effect="fade" time="0">Hidden</animation>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -80,8 +80,8 @@
 				<texture background="true">$INFO[Container(205).ListItem.Property(Fanart)]</texture>
 				<visible>Control.HasFocus(205)</visible>
 				<fadetime>600</fadetime>
-				<animation effect="fade" time="450">Visible</animation>
-				<animation effect="fade" time="450">Hidden</animation>
+				<animation effect="fade" time="0">Visible</animation>
+				<animation effect="fade" time="0">Hidden</animation>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -92,8 +92,8 @@
 				<texture background="true">$INFO[Container(206).ListItem.Property(Fanart)]</texture>
 				<visible>Control.HasFocus(206)</visible>
 				<fadetime>600</fadetime>
-				<animation effect="fade" time="450">Visible</animation>
-				<animation effect="fade" time="450">Hidden</animation>
+				<animation effect="fade" time="0">Visible</animation>
+				<animation effect="fade" time="0">Hidden</animation>
 			</control>
 		</control>
 		<control type="image">
@@ -103,8 +103,8 @@
 			<height>100</height>
 			<texture>floor.png</texture>
 			<aspectratio>stretch</aspectratio>
-			<animation effect="slide" start="0,10" end="0,0" time="150" condition="Window.Previous(Home)">WindowOpen</animation>
-			<animation effect="slide" start="0,0" end="0,10" time="150" condition="Window.Next(Home)">WindowClose</animation>
+			<animation effect="slide" start="0,10" end="0,0" time="0" condition="Window.Previous(Home)">WindowOpen</animation>
+			<animation effect="slide" start="0,0" end="0,10" time="0" condition="Window.Next(Home)">WindowClose</animation>
 		</control>
 		<control type="image">
 			<description>Section header image</description>

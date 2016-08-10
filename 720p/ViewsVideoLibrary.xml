@@ -51,8 +51,8 @@
 						<bordertexture border="8">ThumbBorder.png</bordertexture>
 						<bordersize>8</bordersize>
 						<texture background="true">$VAR[PosterThumb]</texture>
-						<animation reversible="false" effect="zoom" start="-2,36,222,318" end="-28,0,284,390" time="150">focus</animation>
-						<animation reversible="false" effect="zoom" end="-2,36,222,318" start="-28,0,284,390" time="150">unfocus</animation>
+						<animation reversible="false" effect="zoom" start="-2,36,222,318" end="-28,0,284,390" time="0">focus</animation>
+						<animation reversible="false" effect="zoom" end="-2,36,222,318" start="-28,0,284,390" time="0">unfocus</animation>
 					</control>
 					<control type="image">
 						<depth>DepthContentPopout</depth>
@@ -62,8 +62,8 @@
 						<height>180</height>
 						<aspectratio>stretch</aspectratio>
 						<texture>GlassOverlay.png</texture>
-						<animation reversible="false" effect="zoom" start="6,44,170,180" end="-24,4,240,250" time="150">focus</animation>
-						<animation reversible="false" effect="zoom" end="6,44,170,180" start="-24,4,240,250" time="150">unfocus</animation>
+						<animation reversible="false" effect="zoom" start="6,44,170,180" end="-24,4,240,250" time="0">focus</animation>
+						<animation reversible="false" effect="zoom" end="6,44,170,180" start="-24,4,240,250" time="0">unfocus</animation>
 					</control>
 					<control type="image">
 						<depth>DepthContentPopout</depth>
@@ -74,12 +74,12 @@
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.Overlay]</texture>
 						<animation type="focus">
-							<effect type="fade" start="0" end="100" time="150" />
-							<effect type="slide" start="0,0" end="40,40" time="150" />
+							<effect type="fade" start="0" end="100" time="0" />
+							<effect type="slide" start="0,0" end="40,40" time="0" />
 						</animation>
 						<animation type="unfocus">
-							<effect type="fade" start="100" end="0" time="150" />
-							<effect type="slide" end="0,0" start="40,40" time="150" />
+							<effect type="fade" start="100" end="0" time="0" />
+							<effect type="slide" end="0,0" start="40,40" time="0" />
 						</animation>
 					</control>
 				</focusedlayout>
@@ -303,7 +303,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
-				<animation effect="slide" start="0,0" end="0,25" time="150" condition="!Control.HasFocus(508)">conditional</animation>
+				<animation effect="slide" start="0,0" end="0,25" time="0" condition="!Control.HasFocus(508)">conditional</animation>
 			</control>
 		</control>
 		<control type="group">
@@ -375,8 +375,8 @@
 						<bordersize>8</bordersize>
 						<fadetime>200</fadetime>
 						<texture background="true">$VAR[PosterThumb]</texture>
-						<animation reversible="false" effect="zoom" start="-2,16,128,168" end="-12,-10,148,198" time="150">focus</animation>
-						<animation reversible="false" effect="zoom" end="-2,16,128,168" start="-12,-10,148,198" time="150">unfocus</animation>
+						<animation reversible="false" effect="zoom" start="-2,16,128,168" end="-12,-10,148,198" time="0">focus</animation>
+						<animation reversible="false" effect="zoom" end="-2,16,128,168" start="-12,-10,148,198" time="0">unfocus</animation>
 					</control>
 					<control type="image">
 						<depth>DepthContentPopout</depth>
@@ -399,12 +399,12 @@
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.Overlay]</texture>
 						<animation type="focus">
-							<effect type="fade" start="0" end="100" time="150" />
-							<effect type="slide" start="0,0" end="10,5" time="150" />
+							<effect type="fade" start="0" end="100" time="0" />
+							<effect type="slide" start="0,0" end="10,5" time="0" />
 						</animation>
 						<animation type="unfocus">
-							<effect type="fade" start="100" end="0" time="150" />
-							<effect type="slide" end="0,0" start="10,5" time="150" />
+							<effect type="fade" start="100" end="0" time="0" />
+							<effect type="slide" end="0,0" start="10,5" time="0" />
 						</animation>
 					</control>
 				</focusedlayout>
@@ -733,7 +733,7 @@
 					<align>justify</align>
 					<textcolor>white</textcolor>
 					<label>$INFO[ListItem.Plot]</label>
-					<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="0" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 			</control>
 			<control type="grouplist">
@@ -1041,7 +1041,7 @@
 					<align>justify</align>
 					<textcolor>white</textcolor>
 					<label>$INFO[ListItem.Plot]</label>
-					<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="0" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 			</control>
 			<control type="group">
@@ -1105,7 +1105,7 @@
 					<align>justify</align>
 					<textcolor>white</textcolor>
 					<label>$INFO[ListItem.Plot]</label>
-					<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="0" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 			</control>
 			<control type="group">
@@ -1133,7 +1133,7 @@
 					<align>justify</align>
 					<textcolor>white</textcolor>
 					<label>$INFO[Container.ShowPlot]</label>
-					<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="0" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>Container.Content(Seasons)</visible>
 				</control>
 				<control type="label">
@@ -1190,7 +1190,7 @@
 					<align>justify</align>
 					<textcolor>white</textcolor>
 					<label>$INFO[ListItem.Plot]</label>
-					<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="0" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 			</control>
 		</control>
@@ -1484,7 +1484,7 @@
 					<align>justify</align>
 					<textcolor>white</textcolor>
 					<label>$INFO[ListItem.Plot]</label>
-					<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="0" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 			</control>
 			<control type="group">
@@ -1590,7 +1590,7 @@
 					<align>justify</align>
 					<textcolor>white</textcolor>
 					<label>$INFO[ListItem.Plot]</label>
-					<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="0" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 			</control>
 		</control>
@@ -1749,7 +1749,7 @@
 					<align>justify</align>
 					<textcolor>white</textcolor>
 					<label>$INFO[ListItem.Plot]</label>
-					<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="0" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 				<control type="grouplist">
 					<description>Media Codec Flagging Images</description>
@@ -1814,7 +1814,7 @@
 					<align>justify</align>
 					<textcolor>white</textcolor>
 					<label>$INFO[ListItem.Plot]</label>
-					<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="0" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 				<control type="image">
 					<depth>DepthContent+</depth>
@@ -1864,7 +1864,7 @@
 					<align>justify</align>
 					<textcolor>white</textcolor>
 					<label>$INFO[Container.ShowPlot]</label>
-					<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="0" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 				<control type="image">
 					<depth>DepthContent+</depth>
@@ -1914,7 +1914,7 @@
 					<align>justify</align>
 					<textcolor>white</textcolor>
 					<label>$INFO[ListItem.Plot]</label>
-					<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="0" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 				<control type="grouplist">
 					<description>Media Codec Flagging Images</description>

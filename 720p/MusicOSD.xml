@@ -25,7 +25,7 @@
 			<onright>1000</onright>
 			<onup>100</onup>
 			<ondown>100</ondown>
-			<animation effect="fade" time="150">VisibleChange</animation>
+			<animation effect="fade" time="0">VisibleChange</animation>
 			<animation effect="slide" start="0,0" end="-30,0" time="0" condition="Window.IsVisible(Mutebug)">conditional</animation>
 			<visible>![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide) | Window.IsVisible(PVRRadioRDSInfo) | Window.IsVisible(OSDAudioDSPSettings) | Window.IsVisible(Addon)]</visible>
 		</control>
@@ -42,7 +42,7 @@
 			<texturesliderbar>seekslider2.png</texturesliderbar>
 			<textureslidernib>osd_slider_nibNF.png</textureslidernib>
 			<textureslidernibfocus>osd_slider_nib.png</textureslidernibfocus>
-			<animation effect="fade" time="150">VisibleChange</animation>
+			<animation effect="fade" time="0">VisibleChange</animation>
 			<visible>![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide) | Window.IsVisible(PVRRadioRDSInfo) | Window.IsVisible(OSDAudioDSPSettings) | Window.IsVisible(Addon)]</visible>
 		</control>
 		<control type="grouplist" id="100">
@@ -52,7 +52,7 @@
 			<ondown>1000</ondown>
 			<orientation>horizontal</orientation>
 			<itemgap>0</itemgap>
-			<animation effect="fade" time="150">VisibleChange</animation>
+			<animation effect="fade" time="0">VisibleChange</animation>
 			<visible>![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide) | Window.IsVisible(PVRRadioRDSInfo) | Window.IsVisible(OSDAudioDSPSettings) | Window.IsVisible(Addon)]</visible>
 			<control type="button" id="300">
 				<width>55</width>
@@ -91,7 +91,7 @@
 				<font>-</font>
 				<texturefocus>OSDRewindFO.png</texturefocus>
 				<texturenofocus>OSDRewindNF.png</texturenofocus>
-				<animation effect="fade" start="100" end="50" time="75" condition="!Player.SeekEnabled">Conditional</animation>
+				<animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>
 				<onclick>PlayerControl(Rewind)</onclick>
 				<enable>Player.SeekEnabled</enable>
 			</control>
@@ -106,7 +106,7 @@
 				<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
 				<alttexturefocus>OSDPlayFO.png</alttexturefocus>
 				<alttexturenofocus>OSDPlayNF.png</alttexturenofocus>
-				<animation effect="fade" start="100" end="50" time="75" condition="!Player.PauseEnabled">Conditional</animation>
+				<animation effect="fade" start="100" end="50" time="0" condition="!Player.PauseEnabled">Conditional</animation>
 				<onclick>PlayerControl(Play)</onclick>
 				<enable>Player.PauseEnabled</enable>
 			</control>
@@ -126,7 +126,7 @@
 				<font>-</font>
 				<texturefocus>OSDForwardFO.png</texturefocus>
 				<texturenofocus>OSDForwardNF.png</texturenofocus>
-				<animation effect="fade" start="100" end="50" time="75" condition="!Player.SeekEnabled">Conditional</animation>
+				<animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>
 				<onclick>PlayerControl(Forward)</onclick>
 				<enable>Player.SeekEnabled</enable>
 			</control>
@@ -330,7 +330,7 @@
 				<texturenofocus>OSDPreNF.png</texturenofocus>
 				<onclick>ActivateWindow(122)</onclick>
 				<enable>Visualisation.HasPresets</enable>
-				<animation effect="fade" start="100" end="50" time="75" condition="!Visualisation.HasPresets">Conditional</animation>
+				<animation effect="fade" start="100" end="50" time="0" condition="!Visualisation.HasPresets">Conditional</animation>
 			</control>
 			<control type="button" id="704">
 				<width>55</width>

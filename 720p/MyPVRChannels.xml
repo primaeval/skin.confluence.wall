@@ -11,8 +11,8 @@
 			<width>1280</width>
 			<height>100</height>
 			<texture>floor.png</texture>
-			<animation effect="fade" time="200" condition="Window.Previous(Home)">WindowOpen</animation>
-			<animation effect="fade" time="200" condition="Window.Next(Home)">WindowClose</animation>
+			<animation effect="fade" time="0" condition="Window.Previous(Home)">WindowOpen</animation>
+			<animation effect="fade" time="0" condition="Window.Next(Home)">WindowClose</animation>
 		</control>
 		<control type="group">
 			<include>Window_OpenClose_Animation</include>
@@ -182,7 +182,7 @@
 					<shadowcolor>black</shadowcolor>
 					<pagecontrol>-</pagecontrol>
 					<label>$INFO[Container(50).ListItem.Plot]</label>
-					<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
+					<autoscroll time="0" delay="3000" repeat="5000">true</autoscroll>
 				</control>
 				<control type="label">
 					<left>0</left>
@@ -524,8 +524,8 @@
 			<width>1280</width>
 			<height>720</height>
 			<texture>black-back.png</texture>
-			<animation effect="fade" time="300">Visible</animation>
-			<animation effect="fade" time="150">Hidden</animation>
+			<animation effect="fade" time="0">Visible</animation>
+			<animation effect="fade" time="0">Hidden</animation>
 			<visible>Window.IsActive(FileBrowser) | Window.IsActive(PVRGuideInfo) | Window.IsActive(PVRRecordingInfo) | Window.IsActive(PVRTimerSetting) | Window.IsActive(PVRGroupManager) | Window.IsActive(PVRGuideSearch)</visible>
 		</control>
 		<include>PVRSideBlade</include>

@@ -9,19 +9,19 @@
 			<width>1280</width>
 			<height>100</height>
 			<texture>floor.png</texture>
-			<animation effect="slide" start="0,10" end="0,0" time="150" condition="Window.Previous(Home)">WindowOpen</animation>
-			<animation effect="slide" start="0,0" end="0,10" time="150" condition="Window.Next(Home)">WindowClose</animation>
+			<animation effect="slide" start="0,10" end="0,0" time="0" condition="Window.Previous(Home)">WindowOpen</animation>
+			<animation effect="slide" start="0,0" end="0,10" time="0" condition="Window.Next(Home)">WindowClose</animation>
 		</control>
 		<control type="group">
 			<left>90</left>
 			<top>30</top>
 			<animation type="WindowOpen" reversible="false">
-				<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="225" />
-				<effect type="fade" start="0" end="100" time="225" />
+				<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="0" />
+				<effect type="fade" start="0" end="100" time="0" />
 			</animation>
 			<animation type="WindowClose" reversible="false">
-				<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="225" />
-				<effect type="fade" start="100" end="0" time="225" />
+				<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="0" />
+				<effect type="fade" start="100" end="0" time="0" />
 			</animation>
 			<control type="image">
 				<left>5</left>
@@ -101,7 +101,7 @@
 						<width>260</width>
 						<height>55</height>
 						<texture border="5">MenuItemFO.png</texture>
-						<animation effect="fade" start="100" end="30" time="75" condition="!Control.HasFocus(9000)">Conditional</animation>
+						<animation effect="fade" start="100" end="30" time="0" condition="!Control.HasFocus(9000)">Conditional</animation>
 					</control>
 					<control type="label">
 						<left>10</left>
@@ -277,7 +277,7 @@
 						<label>$LOCALIZE[31422]</label>
 						<align>justify</align>
 						<textcolor>white</textcolor>
-						<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+						<autoscroll time="0" delay="4000" repeat="5000">true</autoscroll>
 						<visible>Control.Hasfocus(4)</visible>
 					</control>
 					<control type="textbox">
@@ -290,7 +290,7 @@
 						<label>$LOCALIZE[31423]</label>
 						<align>justify</align>
 						<textcolor>white</textcolor>
-						<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+						<autoscroll time="0" delay="4000" repeat="5000">true</autoscroll>
 						<visible>Control.Hasfocus(5)</visible>
 					</control>
 				</control>

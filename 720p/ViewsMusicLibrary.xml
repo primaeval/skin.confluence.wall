@@ -252,7 +252,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
-				<animation effect="slide" start="0,0" end="0,20" time="150" condition="!Control.HasFocus(509)">conditional</animation>
+				<animation effect="slide" start="0,0" end="0,20" time="0" condition="!Control.HasFocus(509)">conditional</animation>
 			</control>
 		</control>
 		<control type="group">
@@ -324,8 +324,8 @@
 						<bordersize>8</bordersize>
 						<fadetime>200</fadetime>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<animation reversible="false" effect="zoom" start="-2,16,168,168" end="-12,-4,198,198" time="150">focus</animation>
-						<animation reversible="false" effect="zoom" end="-2,16,168,168" start="-12,-4,198,198" time="150">unfocus</animation>
+						<animation reversible="false" effect="zoom" start="-2,16,168,168" end="-12,-4,198,198" time="0">focus</animation>
+						<animation reversible="false" effect="zoom" end="-2,16,168,168" start="-12,-4,198,198" time="0">unfocus</animation>
 					</control>
 					<control type="image">
 						<depth>DepthContentPopout</depth>
@@ -336,12 +336,12 @@
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.Overlay]</texture>
 						<animation type="focus">
-							<effect type="fade" start="0" end="100" time="150" />
-							<effect type="slide" start="0,0" end="40,40" time="150" />
+							<effect type="fade" start="0" end="100" time="0" />
+							<effect type="slide" start="0,0" end="40,40" time="0" />
 						</animation>
 						<animation type="unfocus">
-							<effect type="fade" start="100" end="0" time="150" />
-							<effect type="slide" end="0,0" start="40,40" time="150" />
+							<effect type="fade" start="100" end="0" time="0" />
+							<effect type="slide" end="0,0" start="40,40" time="0" />
 						</animation>
 					</control>
 				</focusedlayout>
@@ -479,7 +479,7 @@
 					<pagecontrol>-</pagecontrol>
 					<textcolor>white</textcolor>
 					<label>$INFO[ListItem.Property(Album_Description)]</label>
-					<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="0" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 			</control>
 		</control>
@@ -910,7 +910,7 @@
 						<align>justify</align>
 						<textcolor>white</textcolor>
 						<label>$INFO[ListItem.Property(Artist_Description)]</label>
-						<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+						<autoscroll time="0" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 					</control>
 				</control>
 			</control>
@@ -1073,7 +1073,7 @@
 					<pagecontrol>-</pagecontrol>
 					<textcolor>white</textcolor>
 					<label>$INFO[ListItem.Property(Album_Description)]</label>
-					<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="0" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 			</control>
 		</control>

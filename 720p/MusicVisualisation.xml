@@ -25,7 +25,7 @@
 		<!-- media infos -->
 		<control type="group">
 			<depth>DepthOSD</depth>
-			<animation effect="fade" time="150">VisibleChange</animation>
+			<animation effect="fade" time="0">VisibleChange</animation>
 			<visible>[Player.ShowInfo | Window.IsActive(MusicOSD)] + ![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide) | Window.IsVisible(PVRRadioRDSInfo) | Window.IsVisible(OSDAudioDSPSettings) | Window.IsVisible(Addon)]</visible>
 			<control type="image">
 				<left>-20</left>
@@ -252,7 +252,7 @@
 					<textcolor>grey</textcolor>
 					<scroll>true</scroll>
 					<visible>MusicPlayer.HasNext + !Window.IsVisible(MusicOSD)</visible>
-					<animation effect="fade" time="150">VisibleChange</animation>
+					<animation effect="fade" time="0">VisibleChange</animation>
 				</control>
 			</control>
 			<control type="group">
@@ -294,7 +294,7 @@
 			<left>0</left>
 			<top>50</top>
 			<visible>Player.ShowCodec + ![Window.IsVisible(script-cu-lrclyrics-main.xml) | Window.IsVisible(VisualisationSettings) | Window.IsVisible(VisualisationPresetList) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide) | Window.IsVisible(PVRRadioRDSInfo) | Window.IsVisible(OSDAudioDSPSettings) | Window.IsVisible(Addon)]</visible>
-			<animation effect="fade" time="150">VisibleChange</animation>
+			<animation effect="fade" time="0">VisibleChange</animation>
 			<control type="image">
 				<description>media info background image</description>
 				<left>0</left>

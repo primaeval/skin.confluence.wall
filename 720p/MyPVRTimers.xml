@@ -11,8 +11,8 @@
 			<width>1280</width>
 			<height>100</height>
 			<texture>floor.png</texture>
-			<animation effect="fade" time="200" condition="Window.Previous(Home)">WindowOpen</animation>
-			<animation effect="fade" time="200" condition="Window.Next(Home)">WindowClose</animation>
+			<animation effect="fade" time="0" condition="Window.Previous(Home)">WindowOpen</animation>
+			<animation effect="fade" time="0" condition="Window.Next(Home)">WindowClose</animation>
 		</control>
 		<control type="group">
 			<include>Window_OpenClose_Animation</include>
@@ -22,8 +22,8 @@
 				<width>1280</width>
 				<height>100</height>
 				<texture>floor.png</texture>
-				<animation effect="fade" time="200" condition="Window.Previous(Home)">WindowOpen</animation>
-				<animation effect="fade" time="200" condition="Window.Next(Home)">WindowClose</animation>
+				<animation effect="fade" time="0" condition="Window.Previous(Home)">WindowOpen</animation>
+				<animation effect="fade" time="0" condition="Window.Next(Home)">WindowClose</animation>
 			</control>
 			<control type="group">
 				<include>Window_OpenClose_Animation</include>
@@ -391,7 +391,7 @@
 						<font>font12</font>
 						<align>justify</align>
 						<textcolor>grey</textcolor>
-						<autoscroll delay="10000" time="3000" repeat="6000">true</autoscroll>
+						<autoscroll delay="10000" time="0" repeat="6000">true</autoscroll>
 						<label>$INFO[ListItem.Plot]</label>
 					</control>
 				</control>
@@ -448,8 +448,8 @@
 			<width>1280</width>
 			<height>720</height>
 			<texture>black-back.png</texture>
-			<animation effect="fade" time="300">Visible</animation>
-			<animation effect="fade" time="150">Hidden</animation>
+			<animation effect="fade" time="0">Visible</animation>
+			<animation effect="fade" time="0">Hidden</animation>
 			<visible>Window.IsActive(FileBrowser) | Window.IsActive(PVRGuideInfo) | Window.IsActive(PVRRecordingInfo) | Window.IsActive(PVRTimerSetting) | Window.IsActive(PVRGroupManager) | Window.IsActive(PVRGuideSearch)</visible>
 		</control>
 		<include>PVRSideBlade</include>

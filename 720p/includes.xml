@@ -251,8 +251,8 @@
 			<width>1280</width>
 			<height>720</height>
 			<texture>black-back.png</texture>
-			<animation effect="fade" time="300">Visible</animation>
-			<animation effect="fade" time="150">Hidden</animation>
+			<animation effect="fade" time="0">Visible</animation>
+			<animation effect="fade" time="0">Hidden</animation>
 			<visible>Window.IsActive(MovieInformation) | Window.IsActive(MusicInformation) | Window.IsActive(SongInformation) | Window.IsActive(FileBrowser) | Window.IsActive(TextViewer) | Window.IsActive(AddonSettings) | Window.IsActive(ContentSettings) | Window.IsActive(SelectDialog) | Window.IsActive(MediaSource) | Window.IsActive(PictureInfo) | Window.IsActive(PlayerControls) | Window.IsActive(VirtualKeyboard) | Window.IsActive(NumericInput) | Window.IsActive(ProfileSettings) | Window.IsActive(LockSettings) | Window.IsActive(SmartPlaylistEditor) | Window.IsActive(SmartPlaylistRule) | Window.IsActive(script-RSS_Editor-rssEditor.xml) | Window.IsActive(script-RSS_Editor-setEditor.xml) | Window.IsActive(AddonInformation) | Window.IsActive(PeripheralSettings) | Window.IsActive(script-cu-lrclyrics-main.xml) | Window.IsActive(MediaFilter)</visible>
 		</control>
 	</include>
@@ -313,8 +313,8 @@
 		<ondown>9002</ondown>
 		<itemgap>0</itemgap>
 		<orientation>Horizontal</orientation>
-		<animation effect="slide" start="0,-40" end="0,0" delay="150" time="150" tween="quadratic" easing="out">Visible</animation>
-		<animation effect="slide" start="0,0" end="0,-40" time="150" tween="quadratic" easing="out">Hidden</animation>
+		<animation effect="slide" start="0,-40" end="0,0" delay="150" time="0" tween="quadratic" easing="out">Visible</animation>
+		<animation effect="slide" start="0,0" end="0,-40" time="0" tween="quadratic" easing="out">Hidden</animation>
 	</include>
 	<include name="ButtonInfoDialogsCommonValues">
 		<height>40</height>
@@ -329,10 +329,10 @@
 	</include>
 	<include name="SideBladeLeft">
 		<depth>DepthSideBlade</depth>
-		<animation effect="slide" start="0,0" end="250,0" time="300" tween="quadratic" easing="out" condition="[ControlGroup(9000).HasFocus | Control.HasFocus(9001) | Control.HasFocus(8999)] + ![Window.IsActive(PVRGuideInfo) | Window.IsActive(PVRRadioRDSInfo)]">Conditional</animation>
-		<animation effect="slide" start="0,0" end="-300,0" time="300" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | Control.HasFocus(9001)">WindowClose</animation>
-		<animation effect="slide" start="0,0" end="-50,0" time="225" tween="quadratic" easing="out" condition="![ControlGroup(9000).HasFocus | Control.HasFocus(9001)]">WindowClose</animation>
-		<animation effect="slide" start="-50,0" end="0,0" time="225" tween="quadratic" easing="out">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="250,0" time="0" tween="quadratic" easing="out" condition="[ControlGroup(9000).HasFocus | Control.HasFocus(9001) | Control.HasFocus(8999)] + ![Window.IsActive(PVRGuideInfo) | Window.IsActive(PVRRadioRDSInfo)]">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-300,0" time="0" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | Control.HasFocus(9001)">WindowClose</animation>
+		<animation effect="slide" start="0,0" end="-50,0" time="0" tween="quadratic" easing="out" condition="![ControlGroup(9000).HasFocus | Control.HasFocus(9001)]">WindowClose</animation>
+		<animation effect="slide" start="-50,0" end="0,0" time="0" tween="quadratic" easing="out">WindowOpen</animation>
 		<control type="button" id="8999">
 			<description>Fake button for mouse control</description>
 			<left>0</left>
@@ -375,8 +375,8 @@
 		<control type="group">
 			<left>120r</left>
 			<top>55r</top>
-			<animation effect="fade" time="200" condition="Window.Previous(Home)">WindowOpen</animation>
-			<animation effect="fade" time="200" condition="Window.Next(Home)">WindowClose</animation>
+			<animation effect="fade" time="0" condition="Window.Previous(Home)">WindowOpen</animation>
+			<animation effect="fade" time="0" condition="Window.Next(Home)">WindowClose</animation>
 			<visible>system.getbool(input.enablemouse)</visible>
 			<control type="button">
 				<description>Back push button</description>
@@ -434,8 +434,8 @@
 		<control type="group">
 			<visible>Player.HasMedia + IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))</visible>
 			<include>VisibleFadeEffect</include>
-			<animation effect="fade" time="200" condition="Window.Previous(Home)">WindowOpen</animation>
-			<animation effect="fade" time="200" condition="Window.Next(Home)">WindowClose</animation>
+			<animation effect="fade" time="0" condition="Window.Previous(Home)">WindowOpen</animation>
+			<animation effect="fade" time="0" condition="Window.Next(Home)">WindowClose</animation>
 			<control type="button">
 				<description>push button</description>
 				<left>30</left>
@@ -857,7 +857,7 @@
 					<alttexturenofocus>OSDPlayNF.png</alttexturenofocus>
 					<onclick>PlayerControl(Play)</onclick>
 					<enable>Player.PauseEnabled</enable>
-					<animation effect="fade" start="100" end="30" time="75" condition="!Player.PauseEnabled">Conditional</animation>
+					<animation effect="fade" start="100" end="30" time="0" condition="!Player.PauseEnabled">Conditional</animation>
 				</control>
 				<control type="button" id="605">
 					<width>39</width>
@@ -867,7 +867,7 @@
 					<texturenofocus>OSDRecordOffNF.png</texturenofocus>
 					<onclick>PlayerControl(record)</onclick>
 					<enable>Player.CanRecord</enable>
-					<animation effect="fade" start="100" end="30" time="75" condition="!Player.CanRecord">Conditional</animation>
+					<animation effect="fade" start="100" end="30" time="0" condition="!Player.CanRecord">Conditional</animation>
 				</control>
 				<control type="button" id="606">
 					<width>39</width>
@@ -1016,8 +1016,8 @@
 		<control type="group">
 			<depth>DepthSideBlade</depth>
 			<visible>Container.Scrolling + [StringCompare(Container.SortMethod,$LOCALIZE[551]) | StringCompare(Container.SortMethod,$LOCALIZE[561]) | StringCompare(Container.SortMethod,$LOCALIZE[558]) | StringCompare(Container.SortMethod,$LOCALIZE[557]) | StringCompare(Container.SortMethod,$LOCALIZE[556])]</visible>
-			<animation effect="slide" start="0,0" end="0,-60" time="75">Visible</animation>
-			<animation effect="slide" start="0,-60" end="0,0" delay="300" time="75">Hidden</animation>
+			<animation effect="slide" start="0,0" end="0,-60" time="0">Visible</animation>
+			<animation effect="slide" start="0,-60" end="0,0" delay="300" time="0">Hidden</animation>
 			<left>300r</left>
 			<top>720</top>
 			<control type="image">
@@ -1053,18 +1053,18 @@
 			<textcolor>white</textcolor>
 			<shadowcolor>black</shadowcolor>
 			<label>$INFO[System.Time]</label>
-			<animation effect="slide" start="0,0" end="-40,0" time="75" condition="Window.IsVisible(Mutebug)">conditional</animation>
+			<animation effect="slide" start="0,0" end="-40,0" time="0" condition="Window.IsVisible(Mutebug)">conditional</animation>
 		</control>
 	</include>
 	<include name="HomeAddonsCommonLayout">
 		<include>Window_OpenClose_Animation</include>
 		<animation type="Visible">
-			<effect type="slide" start="0,30" end="0,0" delay="150" easing="out" tween="quadratic" time="150" />
-			<effect type="fade" start="0" end="100" delay="150" time="150" />
+			<effect type="slide" start="0,30" end="0,0" delay="150" easing="out" tween="quadratic" time="0" />
+			<effect type="fade" start="0" end="100" delay="150" time="0" />
 		</animation>
 		<animation type="Hidden">
-			<effect type="zoom" start="100" end="70" center="auto" easing="in" tween="quadratic" time="225" />
-			<effect type="fade" start="100" end="0" time="225" />
+			<effect type="zoom" start="100" end="70" center="auto" easing="in" tween="quadratic" time="0" />
+			<effect type="fade" start="100" end="0" time="0" />
 		</animation>
 		<hitrect x="0" y="530" w="1280" h="120" />
 		<left>0</left>
@@ -1333,21 +1333,21 @@
 		</focusedlayout>
 	</include>
 	<include name="backgroundfade">
-		<animation effect="fade" time="450">Visible</animation>
-		<animation effect="fade" time="450">Hidden</animation>
+		<animation effect="fade" time="0">Visible</animation>
+		<animation effect="fade" time="0">Hidden</animation>
 	</include>
 	<include name="Window_OpenClose_Animation">
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
+		<animation effect="fade" time="0">WindowOpen</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</include>
 	<include name="dialogeffect">
 		<depth>DepthDialog</depth>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
+		<animation effect="fade" time="0">WindowOpen</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</include>
 	<include name="VisibleFadeEffect">
-		<animation effect="fade" time="225">Visible</animation>
-		<animation effect="fade" time="225">Hidden</animation>
+		<animation effect="fade" time="0">Visible</animation>
+		<animation effect="fade" time="0">Hidden</animation>
 	</include>
 	<include name="KeyboardButton">
 		<width>50</width>
