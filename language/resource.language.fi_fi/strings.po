@@ -1,6 +1,6 @@
 # Kodi Media Center language file
 # Addon Name: Confluence
-# Addon id: skin.confluence
+# Addon id: skin.confluence.windows.fullscreen
 # Addon Provider: Jezz_X, Team Kodi
 msgid ""
 msgstr ""

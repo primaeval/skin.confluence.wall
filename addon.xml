@@ -3,7 +3,7 @@
   id="skin.confluence.wall"
   version="2.8.8"
   name="Confluence Wall"
-  provider-name="Jezz_X, Team Kodi">
+  provider-name="primaeval">
   <requires>
     <import addon="xbmc.gui" version="5.10.0"/>
   </requires>

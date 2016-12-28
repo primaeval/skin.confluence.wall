@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <fonts>
 	<fontset id="Default" idloc="31390">
 		<!-- Normal Fonts -->
@@ -16,7 +15,7 @@
 			<name>font13</name>
 			<filename>Roboto-Regular.ttf</filename>
 			<size>20</size>
-		</font>
+		</font> 
 		<font>
 			<name>font14</name>
 			<filename>Roboto-Regular.ttf</filename>
@@ -82,6 +81,26 @@
 			<name>WeatherTemp</name>
 			<filename>Roboto-Bold.ttf</filename>
 			<size>80</size>
+		</font>
+		<font>
+			<name>PTVL10</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>14</size>
+		</font>
+		<font>
+			<name>PTVL12</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>16</size>
+		</font>
+		<font>
+			<name>PTVL13</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>20</size>
+		</font>
+		<font>
+			<name>PTVL14</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>22</size>
 		</font>
 	</fontset>
 	<fontset id="Massive" idloc="15110">
@@ -167,6 +186,26 @@
 			<filename>Roboto-Bold.ttf</filename>
 			<size>80</size>
 		</font>
+		<font>
+			<name>PTVL10</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>14</size>
+		</font>
+		<font>
+			<name>PTVL12</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>16</size>
+		</font>
+		<font>
+			<name>PTVL13</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>20</size>
+		</font>
+		<font>
+			<name>PTVL14</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>22</size>
+		</font>
 	</fontset>
 	<fontset id="DefaultNoCaps" idloc="31391">
 		<!-- Normal Fonts -->
@@ -250,6 +289,26 @@
 			<name>WeatherTemp</name>
 			<filename>Roboto-Bold.ttf</filename>
 			<size>80</size>
+		</font>
+		<font>
+			<name>PTVL10</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>14</size>
+		</font>
+		<font>
+			<name>PTVL12</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>16</size>
+		</font>
+		<font>
+			<name>PTVL13</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>20</size>
+		</font>
+		<font>
+			<name>PTVL14</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>22</size>
 		</font>
 	</fontset>
 	<fontset id="Arial" idloc="31392">
@@ -343,6 +402,26 @@
 			<filename>arial.ttf</filename>
 			<size>80</size>
 			<style>bold</style>
+		</font>
+		<font>
+			<name>PTVL10</name>
+			<filename>Arial.ttf</filename>
+			<size>14</size>
+		</font>
+		<font>
+			<name>PTVL12</name>
+			<filename>Arial.ttf</filename>
+			<size>16</size>
+		</font>
+		<font>
+			<name>PTVL13</name>
+			<filename>Arial.ttf</filename>
+			<size>20</size>
+		</font>
+		<font>
+			<name>PTVL14</name>
+			<filename>Arial.ttf</filename>
+			<size>22</size>
 		</font>
 	</fontset>
 </fonts>
