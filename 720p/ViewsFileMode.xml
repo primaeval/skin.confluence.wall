@@ -522,20 +522,18 @@
 						<top>0</top>
 						<width>160</width>
 						<height>240</height>
-						<bordertexture border="2">button-nofocus.png</bordertexture>
-						<bordersize>2</bordersize>
+
 						<texture background="false">$VAR[PosterThumb]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 				</itemlayout>
 				<focusedlayout condition="!Container.Content(Movies) + !Container.Content(Seasons) + !Container.Content(TVShows) + !Container.Content(Sets)" height="240" width="160">
 					<control type="image">
-						<left>8</left>
-						<top>0</top>
-						<width>160</width>
-						<height>240</height>
-						<bordertexture border="2">folder-focus.png</bordertexture>
-						<bordersize>2</bordersize>
+						<left>0</left>
+						<top>-12</top>
+						<width>176</width>
+						<height>264</height>
+
 						<texture background="false">$VAR[PosterThumb]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
@@ -546,20 +544,18 @@
 						<top>0</top>
 						<width>160</width>
 						<height>240</height>
-						<bordertexture border="2">button-nofocus.png</bordertexture>
-						<bordersize>2</bordersize>
+
 						<texture background="false">$VAR[PosterThumb]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 				</itemlayout>
 				<focusedlayout condition="Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(Sets)" height="240" width="160">
 					<control type="image">
-						<left>8</left>
-						<top>0</top>
-						<width>160</width>
-						<height>240</height>
-						<bordertexture border="2">folder-focus.png</bordertexture>
-						<bordersize>2</bordersize>
+						<left>0</left>
+						<top>-12</top>
+						<width>176</width>
+						<height>264</height>
+
 						<texture background="false">$VAR[PosterThumb]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
