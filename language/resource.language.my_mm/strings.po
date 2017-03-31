@@ -1,6 +1,6 @@
 # Kodi Media Center language file
-# Addon Name: Confluence
-# Addon id: skin.confluence.windows.fullscreen
+# Addon Name: Confluence Wall
+# Addon id: skin.confluence.wall
 # Addon Provider: Jezz_X, Team Kodi
 msgid ""
 msgstr ""
@@ -23,10 +23,6 @@ msgstr "အလုပ်လုပ်နေသည်"
 msgctxt "#31008"
 msgid "Full screen"
 msgstr "မျက်နှာပြင်အပြည့် "
-
-msgctxt "#31022"
-msgid "Music - Files"
-msgstr "ဂီတ-ဖိုင်များ"
 
 msgctxt "#31023"
 msgid "Playing"

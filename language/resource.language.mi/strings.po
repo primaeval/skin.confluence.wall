@@ -1,6 +1,6 @@
 # Kodi Media Center language file
-# Addon Name: Confluence
-# Addon id: skin.confluence.windows.fullscreen
+# Addon Name: Confluence Wall
+# Addon id: skin.confluence.wall
 # Addon Provider: Jezz_X, Team Kodi
 msgid ""
 msgstr ""
@@ -39,10 +39,6 @@ msgstr "Wā mutunga"
 msgctxt "#31059"
 msgid "Current playlist"
 msgstr "Rārangi ō naianei"
-
-msgctxt "#31060"
-msgid "This file is stacked, select the part you want to play from."
-msgstr "Tāpae i tēnei kōnae te, tīpako i te wahi e hiahia ana koe ki te takaro i te."
 
 msgctxt "#31102"
 msgid "Background"
